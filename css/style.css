@@ -1,0 +1,909 @@
+
+
+/**************************/
+/********* HEADER *********/
+/**************************/
+
+.logo-img {
+    height: 2.2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    background-color: #fdf2e9;
+    position: relative;
+}
+.main-nav-list {
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #e67e22;
+}
+.nav-cta:link,
+.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    background-color: #e67e22;
+    color: #fff;
+    border-radius: 9px;
+}
+.nav-cta:hover,
+.nav-cta:active {
+    background-color: #cf711f;
+}
+    
+
+
+/**************************/
+/*** HERO SECTION ******/
+/**************************/
+
+
+.section-hero {
+    padding: 9.6rem 0;
+    background-color: #fdf2e9;
+}
+.hero {
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    align-items: center;
+    column-gap: 4.8rem;
+}
+.hero-img {
+    max-width: 100%;
+}
+
+.hero-description {
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 4.8rem;
+}
+
+.delivered-meals-box {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.delivered-imgs {
+    display: flex;
+}
+.delivered-imgs img {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid #fdf2e9;
+}
+.delivered-imgs img:last-child {
+    margin: 0;
+}
+.delivered-meals {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.delivered-meals span {
+    color: #cf711f;
+}
+
+/**************************/
+/********* FEATURED IN SECTION *********/
+/**************************/
+.featured-in {
+    margin: 4.8rem auto 9.6rem auto;
+}
+.featured-heading {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    color: #888;
+    text-align: center;
+}
+.featured-in-logos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.6rem;
+}
+
+.featured-in-logos img {
+    height: 3.6rem;
+    filter: brightness(0);
+    opacity: 50%;
+}
+
+/**************************/
+/********* HOW IT WORKS *********/
+/**************************/
+
+.how {
+    padding-top: 3.2rem;
+}
+
+.how-steps {
+    align-items: center;
+    color: #333;
+}
+
+
+.how-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+    
+}
+
+.how-img-box img {
+    max-width: 35%;
+}
+
+.how-text-box {
+    align-self: center
+}
+
+
+
+.how-number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.6rem;
+}
+.how-description {
+    margin-top: 3.2rem;
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+.how-img-box::before {
+    content: "";
+    display: block;
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: #fdf2e9;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+.how-img-box::after {
+    content: "";
+    display: block;
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #fae5d3;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+ /**************************/
+/********* MEALS SECTION *********/
+/**************************/   
+
+
+.meal {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.meal:hover {
+    transform: translateY(-1.2rem);
+}
+
+.meals-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9.6rem;
+}
+
+.meal-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal img {
+    width: 100%;
+}
+.meal-description {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+.meal-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.meal-list li {
+    display: flex;
+    gap: 1.6rem;
+}
+.icon-small {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: #cf711f;
+}
+.tags {
+    display: flex;
+    gap: 0.5rem;
+}
+.tag-vegan {
+    background-color: #c0eb75;
+}
+.tag-paleo {
+    background-color: #fff3bf;
+}
+
+.diets {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+}
+.diets-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    list-style: none;
+}
+.diets-list li {
+    display: flex;
+    gap: 2.4rem;
+}
+.icon-check {
+    color: #e67e22;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.meals-link {
+    text-align: center;
+    margin-top: 0;
+    }
+    
+ 
+.meals {
+    margin-bottom: 4.8rem;
+}
+
+/**************************/
+/********* TESTIMONIALS AND GALLERY *********/
+/**************************/
+
+.section-testimonials {
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    background-color: #fdf2e9;
+    align-items: center;
+}
+
+.testimonials-heading {
+    padding: 9.6rem;
+}
+
+.testimonials-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8rem;
+    column-gap: 9.6rem;
+    padding: 9.6rem;
+}
+
+.testimonial img {
+    height: 8rem;
+    border-radius: 50%;
+    margin-bottom: 1.6rem;
+}
+.testimonial-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.testimonial-customer {
+    font-size: 1.6rem;
+    margin-top: 3.2rem;
+    color: #6f6f6f;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+    align-items: center;
+    
+}
+.gallery figure {
+    overflow: hidden;
+}
+.meal-img {
+    max-width: 100%;
+    min-height: auto;
+    display: block;
+    transition: all 0.4s;
+}
+.meal-img:hover {
+    transform: scale(1.1);
+}
+
+/**************************/
+/********* PRICING *********/
+/**************************/
+
+.section-pricing {
+    padding-top: 9.6rem;
+}
+.pricing-plan {
+    max-width: 75%;
+    padding: 4.8rem;
+    border-radius: 11px;
+}
+.complete-plan {
+    background-color: #fdf2e9;
+    position: relative;
+    overflow: hidden;
+}
+.complete-plan:after {
+    content: "best value";
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.4rem;
+    background-color: #ffd43b;
+    padding: 0.8rem 11rem;
+    position: absolute;
+    top: 6%;
+    right: -26%;
+    transform: rotate(45deg);
+}
+.pricing-plans {
+    margin-bottom: 4.8rem;
+}
+
+.pricing-box {
+    text-align: center;
+}
+
+.plan-name {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #cf711f;
+    margin-bottom: 3.2rem;
+}
+.price-per-month {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+    color: #333;
+}
+.price-per-month span {
+    font-size: 1.8em;
+}
+.price-per-meal {
+    font-size: 1.6rem;
+    margin-bottom: 4.8rem;
+}
+
+.pricing-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    margin-bottom: 4.8rem;
+}
+
+.pricing-features li {
+    display: flex;
+    gap: 1.6rem;
+}
+.pricing-cta {
+    text-align: center;
+}
+.starter-plan {
+    justify-self: end;
+    border: 2px solid #fdf2e9;
+    padding: 4.6rem;
+}
+aside {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    margin-top: 0 !important;
+
+}
+
+.feature-icon {
+    font-size: 3.2rem;
+    color: #e67e22;
+    background-color: #fdf2e9;
+    padding: 1.6rem;
+    border-radius: 50%;
+    margin-bottom: 3.2rem;
+}
+.feature-heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+.feature-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+/**************************/
+/********* CALL TO ACTION *********/
+/**************************/
+
+.section-cta {
+    grid-template-columns: 2fr 1fr;
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    border-radius: 11px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px hsla(0, 0%, 20%, 0.3);
+}
+
+.cta-container {
+    padding-bottom: 9.6rem;
+}
+
+.cta-text-box {
+    padding: 6.2rem 0 6.2rem 6.2rem;
+}
+
+.cta-img-box {
+    background-image: linear-gradient(hsla(28, 80%, 61%, 0.35), hsla(25, 80%, 52%, 0.35)),url("../img/eating.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.cta-text-box h2 {
+    color: #45260a;
+    margin-bottom: 3.2rem;
+    font-family: inherit;
+    font-size: 4.2rem;
+}
+.cta-text {
+    color: #45260a;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    font-family: inherit;
+    margin-bottom: 4.8rem;
+}
+.cta-form {
+    column-gap: 3.2rem;
+    row-gap: 2.2rem;
+    color: #45260a;
+
+}
+
+.cta-form *:focus {
+    box-shadow: 0 0 0 0.8rem hsla(0, 0%, 100%, 0.499)
+}
+}
+form label {
+    display: block;
+    padding-bottom: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+input[type=text], input[type=email], select {
+    width: 100%;
+    padding: 1.2rem;
+    font-family: inherit;
+    font-size: 1.8rem;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    border: none;
+    color: inherit;
+    box-shadow: 0 2px 5px hsla(0, 0%, 20%, 0.385);
+    margin-top: 1.4rem;
+    
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+.btn-form {
+    align-self: end;
+    font-size: 1.8rem;
+    background-color: #45260a;
+    color: #fdf2e9;
+    padding: 1.2rem;
+}
+.btn-form:hover {
+    background-color: #fff;
+    color: #555;
+}
+
+/**************************/
+/********* FOOTER *********/
+/**************************/
+.section-footer {
+    padding: 9.6rem 0;
+    border-top: 1px solid #eee;
+}
+.grid--5cols {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer,
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    gap: 3.2rem;
+    margin-top: 3.2rem;
+    margin-bottom: auto;
+}
+.icon-social {
+    font-size: 2.4rem;
+    color: #555;
+}
+.footer-text {
+    font-size: 1.4rem;
+}
+
+.footer-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 4.8rem;
+}
+
+address {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: auto;
+    line-height: 1.8;
+
+}
+
+.footer-link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #555;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.footer-list a:link,
+.footer-list a:visited {
+    display: inline-block;
+    color: #555;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footer-list a:hover,
+.footer-list a:active {
+    color: #333;
+}
+
+/************* MOBILE NAVIGATION ************/
+
+.mobile-nav-icon {
+    font-size: 4.8rem;
+    color: #333;
+    display: none;
+}
+
+
+/**************************/
+/********* MEDIA QUERIES - SMALLER DESKTOP *********/
+/**************************/
+
+@media (max-width:84em) {
+    .hero {
+        max-width: 120rem;
+    }
+    .primary-heading {
+        font-size: 4.4rem;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/**************************/
+/********* MEDIA QUERIES - LANDSCAPE TABLETS *********/
+/**************************/
+
+@media (max-width:75em) {
+
+    html {
+        font-size: 56.25%;
+    }
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    .main-nav-list {
+        gap: 2.8rem
+    }
+    .secondary-heading {
+        font-size: 3.6rem;
+    }
+    .tertiary-heading {
+        font-size: 2.4rem;
+    }
+    .testimonials-box {
+        padding: 9.6rem 3.2rem;
+    }
+    .grid {
+        row-gap: 6.4remrem;
+        column-gap: 4.8rem;
+    }
+}
+
+
+/**************************/
+/********* MEDIA QUERIES - TABLETS *********/
+/**************************/
+
+@media (max-width:57em) {
+    html {
+        font-size: 50%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .hero-img {
+        max-width: 60%;
+        margin-top: 4.8rem;
+    }
+    .delivered-meals-box {
+        margin-top: 3rem;
+        justify-content: center;
+    }
+    .featured-in-logos img {
+        height: 3rem;
+    }
+    .how {
+        padding-top: 1.8rem;
+    }
+    .how-number {
+        font-size: 6.4rem;
+    }
+    .meal-card {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+    .section-testimonials {
+        grid-template-columns: 1fr;
+    }
+    .testimonials-box {
+        padding: 4.8rem 9.6rem 9.6rem 9.6rem;
+    }
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .pricing-features li {
+        line-height: 1.2;
+    }
+    .section-cta {
+        grid-template-columns: 60% 40%;
+    }
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+    .btn-form {
+        margin-top: 2.4rem;
+    }
+    .btn-mobile-nav {
+        display: block;
+        z-index: 9999;
+    }
+    .mobile-nav-icon[name="menu-outline"] {
+        display: block;
+    }
+    .main-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    /**** use opacity to hide the navigation and to be able to use animations. With using display none you can use no animation)***/
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+        
+    }
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+        
+    }
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 3rem;
+    }
+
+    /**** class nav-open which is added to the parent will be added and removed with JS depending on whether the user has clicked the navigation ****/
+
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    
+    }
+    .nav-open .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+    .nav-open .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+    }
+}
+
+/**************************/
+/********* SMALLER TABLETS *********/
+/**************************/
+
+@media(max-width:44em) {
+    .grid--3cols,
+    .grid--4cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .diets {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+    .pricing-plan {
+        max-width: 100%;
+    }
+    .grid--5cols {
+        grid-template-columns: repeat(6, 1fr);
+
+    }
+    .footer,
+    .contact {
+        grid-column: span 3;
+    }
+    .account,
+    .company,
+    .resources {
+        grid-row: 1;
+        grid-column: span 2;
+    }
+}
+
+@media(max-width:35em) {
+    .hero {
+        padding: 0, 1.8rem;
+     }
+    .delivered-imgs img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .btn:link,
+    .btn:visited,
+    .btn:hover,
+    .btn:active {
+        padding: 1.8rem 1.8rem;
+    }
+    .hero-img {
+        max-width: 80%;
+    }
+    .featured-in-logos img {
+        height: 1.8rem;
+    }
+    .how {
+        padding: 0;
+    }
+    .grid--2cols,
+    .grid--3cols,
+    .grid--4cols {
+        grid-template-columns: 1fr;
+    }
+    .how-img-box {
+        grid-row: 1;
+        transform: translateY(3.2rem);
+    }
+    .testimonials-box {
+        grid-template-columns: 1fr;
+    }
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .pricing-plan {
+        justify-self: center;
+     }
+    .feature {
+        padding: 0 2.4rem;
+    }
+    .section-cta {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-text-box {
+        padding: 0 6.2rem 6.2rem 6.2rem;
+    }
+    .cta-img-box {
+        height: 40rem;
+        background-position-y: 25%;
+        grid-row: 1;
+    }
+}
+
+@media(max-width:30em) {
+    .hero {
+        padding: 0, 1rem;
+     }
+    .delivered-imgs img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .btn:link,
+    .btn:visited,
+    .btn:hover,
+    .btn:active {
+        padding: 1.8rem 1.8rem;
+    }
+    .hero-img {
+        max-width: 80%;
+    }
+    .featured-in-logos img {
+        height: 1.4rem;
+    }
+
+    .feature {
+            padding: 0 1.8rem;
+        }    
+        .cta-text-box {
+            padding: 0 3rem 3rem 3rem;
+        }
+        .testimonials-box {
+            padding: 4.8rem 1.8rem;
+        }
+
